@@ -1,0 +1,5 @@
+Pure Function
+Function Composition
+Shared State
+Mutable Data
+Side Effects
