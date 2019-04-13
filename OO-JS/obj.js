@@ -1,24 +1,37 @@
-// var btsData = {
-//   cell: ['cell1', 'cell2', 'cell3'],
-//   bts: function(num){
-//     var btsArr = [];
-//     for ( var i=0; i<num; i++){
-//       btsArr.push('bts'+i+1);
-//     }
-//   }
-// };
+// var obj = {};
+// var obj2 = new Object;
+
+// console.log(obj);
+// console.log('Type of obj: '+typeof obj);
 
 
-// console.log(btsData.cell);
+// console.log(obj2);
+// console.log('Type of obj2: '+typeof obj2);
 
-// console.log(btsData.bts(10));
+var book = {
+  name: 'Functional JavaScript',
+  author: 'Micbael Fogus',
+  publisher: 'O\'Railly',
+  page: 250,
 
-
-function bts(num){
-  // var btsArr = [];
-  for ( var i=0; i<num; i++){
-    [].push('bts'+i+1);
+  print: function () { 
+    console.log(this.name, this.author);
   }
 }
 
-console.log(bts(10))
+console.log(book);
+
+book.print();
+
+console.log('Book Name:', book.name);
+
+console.log('Author Name: ' + book['author']);
+
+book.price = 30;
+
+for ( var props in book){
+  console.log(props + ' = ' + book[props]);
+  
+}
+
+
